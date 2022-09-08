@@ -10,6 +10,7 @@
         ans[idx] = i;
         ++idx;
     }
+    console.log(ans);
     for (let i = n - k, j = n; i <= j; ++i, --j) {
         ans[idx] = i;
         ++idx;
