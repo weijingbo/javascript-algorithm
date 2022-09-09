@@ -1,6 +1,9 @@
 var mySqrt = function(x) {
     let low =0;
     let high = x;
+    if (x==0 || x==1) {
+        return x
+    }
     while(low<high){
         mid = low+parseInt((high-low)/2);
         if(mid*mid<x){
@@ -11,7 +14,7 @@ var mySqrt = function(x) {
             return mid;
         }
     }
-    return low;
+    return low-1;
 };
 
-console.log(mySqrt(5));
+console.log(mySqrt(1));
